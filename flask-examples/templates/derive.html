@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+ {{ super() }}
+  <link rel="icon" href="{{ url_for('static', filename = 'graph.ico') }}"
+  type="image/x-icon">
+ <style>
+ </style>
+{% endblock %}
+{% block body %}
+<h1>Hello, World!</h1>
+<h1> {{ name }} </h1>
+{% endblock %}
